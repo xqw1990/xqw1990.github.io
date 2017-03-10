@@ -1,0 +1,132 @@
+
+.headerWrap{
+    width:85%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.logo{
+    @include transition(all 0.3s ease);
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 10px 0;
+    opacity: 1 !important; 
+
+    use{
+        fill:#fff; 
+    }
+
+    &:hover{
+        use.beams{
+            @extend .spin ;
+        }
+    }
+}
+
+
+.lang{
+    position: relative;
+    float: right;
+    color:#fff;
+    top: 17px;
+    right: 20px;
+    
+    @include yahei;
+    font-weight: 500;
+    font-size: 15px;
+    
+    .langSelect{
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 3px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        @extend .easing;
+        
+        &.active, &:hover{
+            background-color: rgba(255,255,255,1);
+            color:  #000;
+        }
+    }
+}
+
+
+.menu-toggle{
+    position: relative;
+    float: right;
+    top: 24px;
+
+    cursor: pointer;
+}
+
+
+
+#navList2 {
+    display: none;
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    background-color: rgba(0,0,0,.8);
+    padding: 0 0 30px;
+    text-align: center;
+    z-index: 100;
+    margin: 0;
+
+    overflow: hidden;
+}
+
+#navList2 li{
+    @include transition(all 0.3s ease);
+    list-style-type: none;
+    padding:15px;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#navList2 li:hover{color:#fff45c;}
+
+#navList li
+{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+
+.slideShowWrap{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size:cover;
+    position: relative;
+}
+
+
+.overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    top: 0;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.close-menu{
+    display: block;
+    opacity: 0.6;
+}
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+
+
+// development ==============================================
+$develop: false !global;
+$ie7:     false !global;
+
+
+
+//  media queries ============================================
+
+// sizes start at the sun - 0px
+// the farther from the sun the wider the screen size
+// enter value as 'null' if the sizes is not currently used (they can then be turned on if required)
+
+// USAGE example...
+// (min-width: $jupiter)
+// (max-width: $up-to-saturn)
+$sun:          0 !global;
+$mercury:  322px !global;
+$venus:    430px !global;
+$earth:    640px !global;
+$mars:     820px !global;
+$jupiter: 1000px !global;
+$saturn:  1400px !global;
+$uranus:  1500px !global;
+$neptune: 1920px !global;
+
+// structural ===============================================
+
+
+// spacing blocks - match to style guide, and match to @media
+// ONLY adds to the top & bottom (not sides)
+// USAGE example...
+// @include margin($red-block);
+// @include padding($dark-blue-block);
+// @include margin-and-padding($red-block, $dark-blue-block);
+
+$red-block:             24px !global;
+$green-block:           36px !global;
+$dark-blue-block:       48px !global;
+$pink-block:            60px !global;
+$purple-block:          72px !global;
+$light-blue-block:      96px !global;
+
+
+
+
+
+//  colors ---------------------------------------------------------------
+
+// misc
+$error:                   #c00;    // red
+$success:                 #009900; // green
+
+// hr
+$hr-color:                #999;
+$hr-thickness:            1px;
+
+
+$yellow:				  #f9d761;
+
+
+
+
+
+
+
+// brand colors ==========================================================
+
+
+
+
+
+
+

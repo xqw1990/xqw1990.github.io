@@ -1,0 +1,63 @@
+
+
+/*================================MEDIA QUERIES FROM HERE=======================================*/
+
+
+
+
+/* Landscape phones and down */
+
+@media (max-width: 639px) { 
+
+    h1{font-size: 2em}
+    button{padding:13px 50px}
+
+    .cover-title{width:85%}
+    .container{width: 100%;}
+    .see-more-works{width: 90%;position: relative;left: -5px;}
+    .item { width: 90%; margin:4%;margin-bottom:1%;}
+    .item.w2 {width: 90%;margin:4%;margin-bottom:1%;}
+    .story-book-slider{top:-230px}
+    .wellfest-long-height-frame{top:-185px;width: 74.5%;}
+        .qr{display:none!important;}
+        #elevator{margin-top: 30px!important;}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 640px) and (max-width: 780px) { 
+
+    .cover-title{width:70%}
+    nav{display: none;}
+    .menu-toggle{display: block;}
+
+    h4{font-size: 18px;line-height: 20px;}
+    textarea{width: 90%}
+
+    .container{width: 80%;}
+    .see-more-works{width: 80%;}
+    .item { width: 47%; margin:1%;}
+    .item.w2 {width: 47%;margin:1%;}
+    .story-book-slider{top:-230px}
+    .wellfest-long-height-frame{top:-180px;}
+
+    .qr{display:none!important;}
+    #elevator{margin-top: 30px!important;}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 781px) and (max-width: 979px) { 
+    .container{width: 750px;}
+    .item { width: 228px; margin:10px;}
+    .item.w2 {width: 476px;margin:10px;}
+    .wellfest-long-height-frame{top:-175px;}
+    .story-book-slider{top:-230px}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+    .container{width: 1200px;}
+    .item { width: 370px; margin:15px;}
+    .item.w2 {width: 770px;margin:15px;}
+}
+
+

@@ -1,0 +1,72 @@
+
+/*---------------------------------------ABOUT PAGES END-------------------------------------*/
+
+
+.about-me-wrapper{
+    width: 80%;
+    max-width: 600px;
+    height: 75%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    top: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden; 
+}
+
+.about-me{
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   box-sizing: initial;
+   padding-right: 17px; 
+
+   .me{
+    width: 130px;
+    height: 130px;
+    margin:0 auto 20px;
+    border:3px solid rgba(255,255,255,.6);
+    overflow:hidden;
+
+    @include border-radius(50%);
+    img{width:100%}
+}
+
+p{
+    color: #fff; 
+    font-size: 1.2rem;
+    font-weight: 100;  
+    a{color:#f9d761;}
+
+}
+
+&.displayChinese{
+    p{
+        font-size:1rem;
+    }
+}
+}
+
+
+.logoWhite{
+    svg{
+        width: 40px; 
+        margin: 20px;
+        use{
+            fill:#fff; 
+        }
+    }
+}
+
+
+.contact-list{
+    font-size: 3rem;
+    list-style-type: none;
+
+    a{color:white; &:hover{color:#f9d761}}
+    li{margin:20px;}
+}
+
+/*---------------------------------------ABOUT PAGES END-------------------------------------*/

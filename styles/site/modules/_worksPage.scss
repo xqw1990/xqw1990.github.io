@@ -1,0 +1,99 @@
+
+/*---------------------------------------WORKS PAGES-------------------------------------*/
+
+
+.demo-img{
+    width: 100%;
+    max-width: 1170px;
+    margin:auto;
+    text-align: center;
+    img{
+        width:85%;
+        margin: auto;
+    }
+}
+
+.demo-img-full-width{
+    @extend .demo-img;
+    img{width:98%;}
+}
+
+.text-content{
+    width: 80%;
+    max-width:650px;
+    margin:100px auto;
+}
+
+.slider-wrapper{
+    width: 70%;
+    max-width: 814px;
+    position: absolute;
+    top:-235px;
+    margin: auto;
+    left: -1px;
+    right: 0;
+
+    .bx-pager{display:none;}
+    .bx-wrapper{
+        img{
+            max-width: 100%;
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .bx-controls{
+            z-index: 100;
+            position: static;
+            top: 50%;
+        }
+    }
+    @include planets($mars,max){
+        top: -260px;
+        width: 75%;
+    }
+    @include planets($earth,max){
+        top: -270px;
+    }
+    @include planets(470px,max){
+        top: -260px;
+    }
+    @include planets($venus,max){
+        top: -230px;
+    }
+
+}//slider-wrapper
+
+.story-book-slider{
+    
+    .bx-wrapper{ 
+        .bx-prev {background: url(../img/left-arrow-black.png) no-repeat 0 0;background-size: 100%;}
+        .bx-next {background: url(../img/right-arrow-black.png) no-repeat 0 0;background-size: 100%;}
+    }
+}
+
+
+
+.wellfest-long-height-frame{
+    position: relative;
+    padding-bottom: 40%;
+    height: 0; 
+    width: 73%;
+    margin: auto;
+    top: -165px;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        overflow: auto;
+    }
+}
+
+
+
+
+/*---------------------------------------WORKS PAGES END-------------------------------------*/

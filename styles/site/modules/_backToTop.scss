@@ -1,0 +1,39 @@
+
+/*---------------------------------------BACK TO TOP -------------------------------------*/
+
+#elevator_item {
+    width: 60px;
+    position: fixed;
+    right: 6%;
+    bottom: 10px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    z-index: 100;
+    display: none;
+    
+    &:hover{
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+    &:active {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+
+
+    #elevator {
+        width: 100%; 
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+
+
+    }
+}
+
+
+
+/*---------------------------------------BACK TO TOP END-------------------------------------*/

@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------------------------
+// Media query breakpoints
+// USAGE...
+// @include p($earth)             RESULT: ( min-width: $earth )
+// @include p($earth, max)        RESULT: ( max-width: $earth - 1 )
+// @include p($earth, $jupiter)   RESULT: ( min-width: $earth ) and (max-width: $jupiter - 1 )
+//---------------------------------------------------------------------------------------------
+@mixin planets($size1, $size2: min) {
+  @if $size2 == min {
+    @media only screen and (min-width: $size1) {
+      @content;
+    }
+  } @else if $size2 == max {
+    @media only screen and (max-width: $size1 - 1) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $size1) and (max-width: $size2 - 1) {
+      @content;
+    }
+  }
+}
+
