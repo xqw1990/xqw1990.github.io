@@ -1,0 +1,82 @@
+
+//responsive images ----
+img {
+  // display:    block;
+  width:      auto;
+  max-width:  100%;
+  height:     auto;
+}
+
+
+// bgImage ----
+.bgImage {
+  background-size:      cover;
+  background-repeat:    no-repeat;
+  background-position:  center;
+  position:             relative;
+  overflow:             hidden;
+  top:                0;
+  left:               0;
+  width:              100%;
+  height:             100%;
+  z-index:            1;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (   min--moz-device-pixel-ratio: 1.5),
+  only screen and (        min-device-pixel-ratio: 1.5),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 1.5dppx) {
+    // todo
+  }
+
+  img {
+    position:     absolute;
+    z-index:      -1;
+    width:        10px;
+    height:       auto;
+    left:         -9999em;
+  }
+}
+
+
+.indexBg{
+  background: url('./../../img/indexBg.jpg') no-repeat center center;
+}
+
+.aboutBg{
+  background: url('./../../img/aboutBg.jpg') no-repeat center center;
+}
+
+.contactBg{
+  background: url('./../../img/contactBg.jpg') no-repeat center center;    
+}
+
+.myTrendsBg{
+  background: url('./../../img/works/myTrends/myTrendscover.jpg') no-repeat right center;
+}
+
+.wellfestBg{
+  background: url('./../../img/works/wellfest/wellfest-cover.jpg') no-repeat center center;
+}
+
+.t2Bg{
+  background: url('./../../img/works/T2/T2cover.jpg') no-repeat center center;
+}
+
+.friendsBg{
+  background: url('./../../img/works/friends/friends-cover.jpg') no-repeat center center;
+}
+
+.oasisCdBg{
+  background: url('./../../img/works/CD/oasiscd-cover.jpg') no-repeat center center;
+}
+
+.britzBg{
+  background: url('./../../img/works/britz/britz-cover.jpg') no-repeat center center;
+}
+
+.kxBg{
+  background: url('./../../img/works/KX/kx-cover.jpg') no-repeat center center;
+}
+
